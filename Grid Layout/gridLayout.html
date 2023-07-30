@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            font-size:2.5rem;
+        }
+        .container{
+            
+            display: grid;
+            /*grid-template-columns: 200px 100px;;
+            Fraction Units : grid-template-columns: 2fr 1fr;
+            using repeat: grid-template-columns:repeat(4, 100px);*/
+            grid-template-columns: 200px 250px;
+            grid-auto-rows: minmax(150px, auto);
+            gap:20px
+
+        }
+        .container2{
+            
+            display: grid;
+            grid-template-columns: repeat(3,auto) ;
+        }
+
+        .container3{
+            display:grid;
+            grid-auto-rows: 150px;
+        }
+
+        .grid-item{
+            padding:1em;
+            border: solid white;
+            font-weight:bold; 
+            color:black;
+        }
+
+        .container1 :nth-child(odd){
+            background-color: aqua;
+        }
+        .container1 :nth-child(even){
+            background-color: rgb(0, 126, 126);
+        }
+        .container2 :nth-child(odd){
+            background-color: rgb(0, 255, 42);
+        }
+        .container2 :nth-child(even){
+            background-color: rgb(23, 126, 0);
+        }
+        .container3 :nth-child(odd){
+            background-color: rgb(251, 0, 255);
+        }
+        .container3 :nth-child(even){
+            background-color: rgb(99, 3, 85);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Grid layout</h1>
+    <P>Allows you to layout items flexibly inside the container in two dimensions.
+       Allows you to line items vertically and horizontally. 
+    </P>
+    <div class="container container1">
+        <div class="grid-item grid-item1">Grid Item 1</div>
+        <div class="grid-item grid-item2">Grid Item 2</div>
+        <div class="grid-item grid-item3">Grid Item 3</div>
+        <div class="grid-item grid-item4">Grid Item 4</div>
+        <div class="grid-item grid-item5">Grid Item 5</div>
+    </div>
+
+<!--     <div class="container container2">
+        <div class="grid-item grid-item1">Grid Item 1</div>
+        <div class="grid-item grid-item2">Grid Item 2</div>
+        <div class="grid-item grid-item3">Grid Item 3</div>
+        <div class="grid-item grid-item4">Grid Item 4</div>
+        <div class="grid-item grid-item5">Grid Item 5</div>
+    </div>
+    <div class="container container3">
+        <div class="grid-item grid-item1">Grid Item 1</div>
+        <div class="grid-item grid-item2">Grid Item 2</div>
+        <div class="grid-item grid-item3">Grid Item 3</div>
+        <div class="grid-item grid-item4">Grid Item 4</div>
+        <div class="grid-item grid-item5">Grid Item 5</div>
+    </div> -->
+
+</body>
+</html>

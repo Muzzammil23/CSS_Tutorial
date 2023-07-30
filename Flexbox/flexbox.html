@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+/*         *{
+            padding: 0;
+            margin:0;
+            box-sizing:border-box;
+            
+        } */
+
+        body{
+
+            font-size: 2rem;
+        }
+
+
+        h1
+        {
+            background-color: cadetblue;
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        
+
+        .flex-container{
+            background-color: dodgerblue;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .box{
+            background-color:white;
+            margin: 2em;
+            padding:2em;
+        }
+        .content{
+            background-color: rgb(33, 51, 51);
+            color:white;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox</h1>
+
+    <ul class="content flex-container">
+        <li>Set disply property to flex(<strong>display:flex;</strong> )</li>
+        <li>flexbox properties: </li>
+            <ul>
+                <li>Flex direction: which direction the container wants to stack the flex items</li>
+                <ul>
+                    <li>Column</li>
+                    <li>Column-reverse</li>
+                    <li>Row</li>
+                    <li>row-reverse</li>
+                </ul>
+
+                <li>Flex-wrapt: specifies whether the flex items should wrap or not</li>
+                <ul>
+                    <li>wrap</li>
+                    <li>nowrap</li>
+                </ul>
+                <li>Flex-flow: shorthand property for setting both the flex-direction and flex-wrap</li>
+
+                <li>Justify-content: used to align the flex items</li>
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                </ul>
+
+                <li>Align-items: used to align the flex items</li>
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>stretch</li>
+                    <li>baseline</li>
+                </ul>
+                <li>Align-content: used to align the flex lines</li>
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>stretch</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                </ul>
+            </ul>
+    </ul>
+    
+    <div class="flex-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    
+</body>
+</html>

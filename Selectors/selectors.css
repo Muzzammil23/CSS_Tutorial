@@ -1,0 +1,38 @@
+*{
+    font-family: monospace;
+
+}
+
+body{
+    font-size:22px;
+    background-color: rgb(176, 251, 204);
+    padding:10px;
+}
+
+/*Separate elements with comma to select multiple elements(group selectors)*/
+h1, h2{
+    color:blue;
+    text-decoration: underline ;
+    text-align: center;
+}
+
+p{
+    color:purple;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: rgb(254, 229, 87);
+}
+
+/*classes can be used more than once
+  classes are denoted by a .*/
+.gray{
+    color:rgb(96, 95, 95);
+}
+
+/*id's can be used once
+  id's are denoted by a #*/
+#second{
+    font-style: italic;
+}

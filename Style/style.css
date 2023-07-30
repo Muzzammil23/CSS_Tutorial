@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* Set the height of the div to 
+    the entire screen */
+    height: 100vh;
+    background-image: url("/Pictures/background.webp");
+    
+    background-size: cover;
+}   
+h1{
+    margin:20px;
+    padding:20px;
+    color:rgb(252, 62, 62);
+    font-family: 'Rubik Vinyl';
+    font-size:60px;
+}
+
+h1:hover{
+    color:rgb(0, 0, 0); 
+    background-color: rgba(255, 255, 255, 0.741);   
+}
+
+.buttons{
+    background-image: linear-gradient(rgb(168, 249, 47),rgb(249, 249, 67),rgb(252, 214, 214));
+    padding: 1em;
+    margin: 1rem;
+    position:relative;
+
+}
+p{
+    margin:20px;
+    border: 10px double;
+    border-radius: 50px;
+    padding:20px;
+
+    font-size:50px;
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+
+    background-image:linear-gradient(to right, rgb(0, 149, 255), rgb(128, 0, 15));
+    
+}
+
+.btn{
+    margin:30px;
+    padding:20px;
+    font-weight:bold;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-image:linear-gradient(180deg, rgb(165, 218, 255), rgb(155, 248, 155), rgb(248, 159, 248) )
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Types</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size:2rem;
+        }
+
+        p{
+            background-color:lightgrey;
+        }
+
+        .p1{
+            padding:2em;
+            margin:1em;
+
+        }
+
+        .opposite{
+            display:inline-block;
+
+            background-color: black;
+            color:white;
+            padding:4rem;
+            margin-top:100px;
+            height:200px;
+        }
+
+        ol{
+            list-style-type: none;
+            padding:1rem;
+            text-align:right;
+            background-color: aquamarine;
+            margin:0;
+        }
+
+        li{
+            display:inline-block;
+            /*only change margin sides*/
+            margin-inline: 1rem;
+        }
+
+        li a {
+            color:blue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        li a:hover, li a:focus{
+            text-decoration: underline;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+    <!-- <p>This is a paragraph</p>
+    <p>This is <span class="opposite">another</span>  paragraph</p>
+     -->
+
+    <nav>
+        <ol>
+            <li><a href="#">Intro</a> </li>
+            <li><a href="#">Portfolio</a> </li>
+            <li><a href="#">Projects</a> </li>
+        </ol>
+    </nav>
+
+    <h1>DISPLAY TYPES IN CSS</h1>
+    <nav>
+        <ul>
+            <li>block</li>
+            <li>inline</li>
+            <li>flex</li>
+            <li>grid</li>
+            <li>none</li>
+        </ul>
+    </nav><hr>
+
+    <p class="p1">
+        <strong>Display</strong>  specifies the display behavior of element. <br>
+
+        <br>>><strong>Block</strong> : Displays element as a block element (eg p). it starts o a new line and takes up the whole width.
+        <br>>><strong>Inline</strong>: Displays element as inline element (eg span). Height and width properties have no effect.
+        <br>>><strong>Flex</strong>: Displays elements as a block level flex container
+        <br>>><strong>Grid</strong>: Displays an element as a block-level grid container
+        <br>>><strong>Inline-Block</strong>: Displays an element as an inline-level block container.The element itself is formatted as an inline element, but you can apply height and width values
+        <br>>><strong>none</strong>: Removes element
+    </p>
+
+
+
+    </main>
+
+
+</body>
+</html>

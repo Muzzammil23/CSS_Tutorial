@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <style>
+        body{
+            font-size:1.5rem;
+        }
+        h1{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        
+        .block1{
+            width:30vw;
+            height:30vh;
+            background-color: black;
+            color:white;
+            padding :1rem;  
+
+        }
+        .block2{
+            width:30vw;
+            height:30vh;
+            background-color: rgb(13, 255, 0);
+            color:white;
+            padding :1rem;  
+
+        }
+
+        .left{
+            float:left;
+            margin-right: 1rem;            
+        }
+
+        .right{
+            float:right;
+            margin-left: 1rem;            
+        }
+
+        .clear{
+            clear:both;
+        }
+
+        section{
+            background-color: bisque;
+            border: 1px solid black;
+            padding: 1rem;
+            
+            /* to fit everything on the float   
+            overflow:auto; or */
+            display:flow-root;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Floats</h1>
+    <div style="margin:1em">Used to float things to left or right and wrap text around it. Use <strong>overflow:auto</strong>  to fit everything in the box</div>
+    
+    <section>
+    <div class="block1 left">Float</div>    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro ex laudantium labore placeat saepe reprehenderit corrupti, alias fugit perspiciatis.</p>
+    </section>
+    <div class="clear"></div>
+    <p >Cumque totam vitae rem iure eos molestias molestiae inventore, enim sit corrupti dolores recusandae saepe voluptas labore perferendis, eveniet nostrum.</p>
+    <p>Voluptatem voluptas ipsum corporis accusantium neque impedit veniam rem. Minus harum laudantium distinctio aliquid saepe! Ab velit facilis deleniti facere.</p>
+    <section>
+    <div class="block2 right">Float</div>
+    <p>Consectetur veritatis ea placeat vitae veniam quod quidem aut quisquam, amet provident voluptas maxime assumenda excepturi cum nobis quos illum.</p>
+    <p>Voluptatum, est quaerat pariatur suscipit alias consequatur adipisci, iure facilis obcaecati cum delectus sint et. Maxime harum ipsa dolor animi.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    font-size:22px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+    background:rgb(173, 203, 83);
+    color: rgb(0, 0, 91);
+}
+
+header{
+    background:linear-gradient(to right, rgba(21, 255, 0, 0.756), rgba(247, 0, 255, 0.844))
+}
+
+header h3 a:hover{
+
+    color:rgb(255, 0, 136);
+}
+
+p, p2, p3,p4{
+    border: 5px black solid;
+    border-radius:10px;
+    background: rgb(188, 255, 255);
+}
+
+p{
+    /*rgb(value1, value2, value3)*/    
+    color:rgb(137, 0, 0);
+}
+
+#p2{
+    /*rgba(value1, value2, value3, value4) a is for alpha which guides tranparency*/
+    color:rgba(0,0,0,0.5); /*a=0 makes it transparent*/
+}
+
+#p3{
+    /*hexadecimals (6 digits or numbers)
+    similar to rgb
+    uses 0-9 and A-F
+    #000000 is black (red is 00, green is 00, blue is 00)
+    #FFFFFF is white, #00FF00 is green
+    #FF0000 is red, #0000FF is blue  */
+    color : #ee00ee;
+}
+
+#p4{
+    /*hsl: hue saturation% lightness%*/
+   color: hsl(0, 100%, 50%);
+}

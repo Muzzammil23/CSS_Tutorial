@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units and sizes</title>
+    <link rel="stylesheet" href="unit_sizes.css">
+    <style>
+        html{
+            font-size:16px;
+        }
+
+
+        .fifty-percent{
+            width:50%
+        }
+
+        .hundred-pixels{
+            width:100px;
+        }
+
+        .parent1{
+            width:100px;
+            font-size: 20px;
+        }
+
+        .fifty-vw{
+            width:50vw
+        }
+
+        .twenty-five-vh{
+            height:25vh;
+        }
+        html {
+        font-size: 30px;
+        }
+ 
+
+ 
+    .child-rem {
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Css units</h1>
+
+    <p>Pixel units are an absolute width, it will always be the same where ever its defined. <br>
+        Percentage is a percentage based off the parent size </p>
+
+    <div class="box fifty-percent">50%</div>
+    <div class="box hundred-pixels">100px</div>
+
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box hundred-pixels">100px</div>
+    </div>
+
+    <hr>
+    <p>VH stands for “viewport height”, which is the viewable screen's height. 
+        100VH would represent 100% of the viewport's height, or the full height of the screen. VW stands for “viewport width”, which is the viewable screen's width.</p>
+    <div class="box2 fifty-percent">50%</div>
+    <div class="box2 fifty-vw">50vw</div>
+    <div class="box2 twenty-five-vh">25vh</div>
+    
+    <div class="parent">
+        <div class="box3 fifty-percent">50%</div>
+        <div class="box3 fifty-vw">50vw</div>
+        <div class="box3 twenty-five-vh">25vh</div>
+    </div>
+    <hr>
+    <p>em unit allows setting the font size of an element relative to the font size of its parent. When the size of the parent element changes, the size of the child changes automatically. <br>
+        rem is based upon the font-size value of the root element, which is the <html> element. And if the <html> element doesn’t have a specified font-size, the browser default value of 16px is used.</p>
+
+        <div class="parent1">
+            This is parent
+            <div class="child-rem">
+                This is Child in rem unit system
+            </div>
+        </div>
+
+    <br>
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+
+/* syntax:
+    @media media type and (condition:breakpoint){
+        css rules
+    } */
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+            background-color: grey;
+            background-image: radial-gradient(white,grey);
+            display:flex;
+            flex-direction: column;
+        }
+
+        header, nav, main, footer{
+            display:grid;
+            place-content: center;
+            grid-template-columns: 100%;
+            text-align: center;
+        }
+
+        header, footer{
+            position:sticky;
+            background-color: rgb(0, 0, 86);
+            color:white;
+        }
+
+        header{
+            top:0;
+        }
+        footer{
+            bottom:0;
+        }
+
+        main{
+            flex-grow:1;
+        }
+
+        nav{
+            background-color: white;
+            color:black;
+
+        }
+        /* Small screen */
+        @media screen and (min-width:576px){
+            body{
+                background-color: green;
+                background-image: radial-gradient(white, green);
+            }
+            nav{
+                display:none;
+            }
+        }
+        /* Medium screen */
+        @media screen and (min-width:768px){
+            body{
+                background-color: gold;
+                background-image: radial-gradient(white, gold);
+            }
+            
+        }
+        /* Large screen */
+        @media screen and (min-width:992px){
+            body{
+                background-color: firebrick;
+                background-image: radial-gradient(white, firebrick);
+            }
+            
+        }
+        /* XLarge screen */
+        @media screen and (min-width:1200px){
+            body{
+                background-color: purple;
+                background-image: radial-gradient(white, purple);
+            }
+            
+        }
+        /* mobile screen LANDSCAPE*/
+        @media screen and (max-height:425px)and (min-aspect-ratio:7/4){
+            body{
+                background-color: dodgerblue;
+                background-image: radial-gradient(white, dodgerblue);
+            }
+            h1, h2{
+                font-size: 1.5rem;
+            }
+            nav{
+                display:none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Header</h1>
+        <nav><h2>Nav</h2></nav>
+    </header>
+
+    <main>
+        <h2>Main</h2>
+    </main>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        img{
+            display:block;
+        }
+
+        body{
+            min-height:100vh;
+        }
+
+        .example{
+            margin-top:1rem;
+            padding-left:20px;
+            border: 1px solid red;
+        }
+
+        .example img{
+            width: 25%;
+            height:auto;
+        }
+
+        .nowrap{
+            white-space: nowrap;
+        }
+
+        .offscreen{
+            position:absolute;
+            left:-100000px;
+        }
+        .hero{
+            border:2px solid black;
+            padding:10px;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap:30px;
+
+            background-color: rgb(255, 236, 207);
+            background-image: url('../Pictures/img2.jpg');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center bottom;
+        }
+
+        .h1{
+            font-size:500%;
+            color:white;
+        }
+        .profile-pic-figure{
+            width:35%;
+        }
+
+        .profile-pic-figure img{
+            width:100%;
+            height:auto;
+            min-width:100px;
+            border:5px double grey;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="example">
+        <img src="../Pictures/background.webp" alt="car" width="200" height="200">
+    </section> 
+
+     <section class="hero">
+        <figure class="profile-pic-figure">
+            <img src="../Pictures/car.jpg" alt="profile pic" title="profile pic" width="800" height="800">
+            <figcaption class="offscreen">Muzzammil Mahomed</figcaption>
+        </figure>
+
+        <h1 class="h1">
+            <span class="nowrap"> Hello, </span>
+            <span class="nowrap"> I'm Muzzammil</span>
+        </h1>
+    </section>
+
+
+    
+</body>
+</html>

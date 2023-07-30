@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        img{
+            display:block;
+            max-width:100%;
+            height:auto;
+        }
+
+        .nowrap{
+            white-space:nowrap;
+        }
+
+        body{
+            min-height:100vh;
+
+            background-color:grey;
+            background-image: radial-gradient(white, grey);
+
+            display:flex;
+            flex-direction:column;
+        }
+
+        main{
+            flex-grow: 1;
+            display:flex;    
+            flex-direction:column;
+            align-items: center;
+            gap:1.5rem;
+            padding: 1rem;    
+        }
+        
+
+        header, footer{
+            position:sticky;
+            background-color: rgb(9, 22, 69);
+            color: white;
+            text-align:center;
+        }
+
+        nav{
+            background-color:white;
+            padding:0.5rem;
+            border-bottom: 2px solid black;
+            font-weight: bolder;
+            display:flex;
+            justify-content: space-evenly;
+        }
+
+        nav a, nav a:visited{
+            color:black;
+        }
+
+        nav a:hover, nav a:focus{
+            color:hsl(105, 100%, 12%);
+        }
+
+        .card{
+            scroll-margin-top: 8rem;
+            width:min(100%, 350px);
+            background-color: lightgray;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding:1rem;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+
+        }
+
+        .card figure{
+            display:flex;
+            flex-flow:column nowrap;
+        }
+
+        .card img{
+            border: 5px double black;
+            border-radius: 50%;
+        }
+
+        .card figcaption{
+            font-weight: bolder;
+            font-size: 2rem;
+            margin:1rem;
+            text-align: center;
+        }
+
+        /* small screen */
+        @media screen and (min-width:576px){
+            main{
+                justify-content: center;
+                flex-flow:row wrap;
+                padding:1rem
+            }
+            .card{
+                width:min(100%, 400%);                
+            }
+
+            .card:last-child{
+                order:-1;
+            }
+        }
+
+        /* medium screen */
+        @media screen and (min-width: 768px){
+            nav{
+                display:none;
+            }
+            .card{
+               width:min(100%, 325px); 
+            }
+            .card figure{
+                flex-flow: column-reverse;
+            }
+            .card figcaption{
+                margin:0.1em 0;                
+            }
+            .card p{
+                margin-top:1rem;
+            }
+
+             
+        }
+
+        /* large screen */
+        @media screen and (min-width:992px){
+            .card{
+                width:min(100%, 400px);
+            }
+
+            .card:nth-child(2){
+                order:-1;
+            }
+        }
+
+        /* Xlarge screen */
+        @media screen and (min-width:1200px){
+            .card{
+                width:min(calc(33%-1rem), 500px);
+            }
+        }
+
+       /*  mobile device landscape */
+
+       @media screen and (max-height:425px) and (min-aspect-ratio:7/4){
+        h1{
+            font-size: 1.5rem;
+        }
+        main{
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+
+        }
+
+        .card{
+            width:min(calc(33%-0.25rem),200px)
+        }
+
+        .card figcaption, .card p{
+            font-size:1.25rem;
+        }
+       }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>OUR STAFF</h1>
+        <nav>
+            <a href="#prof1">Joe</a>
+            <a href="#prof2">Matt</a>
+            <a href="#prof3">Jane</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="prof1" class="card">
+            <figure>
+                <img src="../Pictures/pp1.webp" alt="Joe" width="500" height="500">
+                <figcaption>Joe</figcaption>
+            </figure>
+            <p>
+                <q>I code stuff</q>
+            </p>
+        </article>
+
+        <article id="prof2" class="card">
+            <figure>
+                <img src="../Pictures/pp2.jpg" alt="Jane" width="500" height="500">
+                <figcaption>Jane</figcaption>
+            </figure>
+            <p>
+                <q>I design stuff</q>
+            </p>
+        </article>
+
+        <article id="prof3" class="card">
+            <figure>
+                <img src="../Pictures/pp3.jpg" alt="Matt" width="500" height="500">
+                <figcaption>Matt</figcaption>
+            </figure>
+            <p>
+                <q>I teach stuff</q>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Acme co</p>
+    </footer>
+    
+</body>
+</html>

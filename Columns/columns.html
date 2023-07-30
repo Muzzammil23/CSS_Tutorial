@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <style>
+
+        body{
+            font-size:1.5rem;
+        }
+        h1{
+            font-size:4rem;
+            text-align:center;
+
+        }
+
+        .columns{
+            /* column-count:4;            
+            column-width:250px; */
+            columns: 4 250px;
+            column-rule:10px solid black;
+            column-gap:2em;         
+        }
+
+        .columns p{
+            margin-top:0;
+        }
+
+        .columns h2{
+            margin-top:0;
+            background-color: black;
+            color: white;
+            padding :1rem;
+            break-inside: avoid;
+        }
+
+        .columns .quote{
+            margin-top:2rem;
+            font-size:3rem;
+            text-align:center;
+            color: black;
+            column-span: all;
+        }
+        .nowrap{
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Columns</h1>
+    <section class="columns">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum laboriosam, voluptatum nulla voluptas neque velit maiores repellat natus voluptates repellendus.</p>
+        <p>Omnis, ab perspiciatis quibusdam esse doloribus quam magnam voluptates. Nobis, eius reiciendis! Nemo quidem soluta, quod cumque ut reprehenderit? Nam?</p>
+        <!-- <h2>Next Topic</h2> -->
+        <p class="quote"> &#8223;Where's my rug, man?&#8221; &#65123; <span class="nowrap">The dude</span></p>
+        <p>Labore modi dolor eaque doloribus repellat veritatis quam perferendis recusandae quasi magnam explicabo alias, incidunt et tempora sed, libero necessitatibus.</p>
+        <p>Cum libero esse ipsum, neque odit nihil dolorum expedita repellat ad aperiam, est atque, consectetur modi. Voluptatem exercitationem itaque error.</p>
+    </section>
+    <p>Numquam molestiae esse nobis laudantium veniam, voluptatem libero molestias vel soluta eveniet a nostrum aliquid officia, nihil hic iusto? Repellat.</p>
+</body>
+</html>
